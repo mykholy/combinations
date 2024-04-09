@@ -1,9 +1,12 @@
 {
     "name": "mykholy/combinations",
-    "description": "My awesome package",
+    "description": "My awesome package for combinations generation",
     "keywords": [
         "mykholy",
-        "combinations"
+        "combinations",
+        "math",
+        "algorithm",
+        "laravel"
     ],
     "homepage": "https://github.com/mykholy/combinations",
     "license": "MIT",
@@ -16,27 +19,26 @@
         }
     ],
     "require": {
-        "php": "^7.* || ^8.*",
+        "php": "^7.0 || ^8.0 ||  ^8.1 ||  ^8.2",
         "illuminate/support": "*"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Mykholy\\Combinations\\": "src"
+            "Mykholy\\Combinations\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mykholy\\Combinations\\Tests\\": "tests"
+            "Mykholy\\Combinations\\Tests\\": "tests/"
         }
     },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
     },
     "config": {
         "sort-packages": true
